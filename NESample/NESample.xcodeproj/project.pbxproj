@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		008CEBA826A9686900ADBC00 /* NESampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008CEBA726A9686900ADBC00 /* NESampleTests.m */; };
+		008CEBB326A9686900ADBC00 /* NESampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008CEBB226A9686900ADBC00 /* NESampleUITests.m */; };
+		00A6825C26AABE9000D660A8 /* NETextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A6825B26AABE9000D660A8 /* NETextFieldCell.m */; };
+		00A6825F26AABEDC00D660A8 /* NETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A6825E26AABEDC00D660A8 /* NETextField.m */; };
+		00A8192826AA537D00AB6EB7 /* NEMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A8191926AA537D00AB6EB7 /* NEMainWindowController.m */; };
+		00A8192926AA537D00AB6EB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A8191B26AA537D00AB6EB7 /* AppDelegate.m */; };
+		00A8192A26AA537D00AB6EB7 /* NEMainWindowContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A8191C26AA537D00AB6EB7 /* NEMainWindowContentView.m */; };
+		00A8192D26AA537D00AB6EB7 /* NEUIMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A8192426AA537D00AB6EB7 /* NEUIMgr.m */; };
+		00A8192E26AA537D00AB6EB7 /* NEMainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A8192726AA537D00AB6EB7 /* NEMainWindow.m */; };
+		00A8193626AA54C400AB6EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00A8193226AA54C400AB6EB7 /* Assets.xcassets */; };
+		00A8193726AA54C400AB6EB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A8193326AA54C400AB6EB7 /* main.m */; };
+		00A8193F26AA578800AB6EB7 /* NEMeetingUIMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A8193E26AA578800AB6EB7 /* NEMeetingUIMgr.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		008CEBA426A9686900ADBC00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 008CEB8526A9686700ADBC00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 008CEB8C26A9686700ADBC00;
+			remoteInfo = NESample;
+		};
+		008CEBAF26A9686900ADBC00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 008CEB8526A9686700ADBC00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 008CEB8C26A9686700ADBC00;
+			remoteInfo = NESample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008CEB8D26A9686700ADBC00 /* NESample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NESample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		008CEBA326A9686900ADBC00 /* NESampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NESampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		008CEBA726A9686900ADBC00 /* NESampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESampleTests.m; sourceTree = "<group>"; };
+		008CEBA926A9686900ADBC00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		008CEBAE26A9686900ADBC00 /* NESampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NESampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		008CEBB226A9686900ADBC00 /* NESampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESampleUITests.m; sourceTree = "<group>"; };
+		008CEBB426A9686900ADBC00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A6825A26AABE9000D660A8 /* NETextFieldCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NETextFieldCell.h; sourceTree = "<group>"; };
+		00A6825B26AABE9000D660A8 /* NETextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETextFieldCell.m; sourceTree = "<group>"; };
+		00A6825D26AABEDC00D660A8 /* NETextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NETextField.h; sourceTree = "<group>"; };
+		00A6825E26AABEDC00D660A8 /* NETextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETextField.m; sourceTree = "<group>"; };
+		00A8191926AA537D00AB6EB7 /* NEMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEMainWindowController.m; sourceTree = "<group>"; };
+		00A8191A26AA537D00AB6EB7 /* NEMainWindowContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEMainWindowContentView.h; sourceTree = "<group>"; };
+		00A8191B26AA537D00AB6EB7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		00A8191C26AA537D00AB6EB7 /* NEMainWindowContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEMainWindowContentView.m; sourceTree = "<group>"; };
+		00A8191D26AA537D00AB6EB7 /* NEMainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEMainWindow.h; sourceTree = "<group>"; };
+		00A8191E26AA537D00AB6EB7 /* NEUIMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEUIMgr.h; sourceTree = "<group>"; };
+		00A8192226AA537D00AB6EB7 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		00A8192426AA537D00AB6EB7 /* NEUIMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEUIMgr.m; sourceTree = "<group>"; };
+		00A8192526AA537D00AB6EB7 /* NEMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEMainWindowController.h; sourceTree = "<group>"; };
+		00A8192626AA537D00AB6EB7 /* NEUIMgrProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEUIMgrProtocol.h; sourceTree = "<group>"; };
+		00A8192726AA537D00AB6EB7 /* NEMainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEMainWindow.m; sourceTree = "<group>"; };
+		00A8193226AA54C400AB6EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00A8193326AA54C400AB6EB7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00A8193426AA54C400AB6EB7 /* NESample.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = NESample.entitlements; sourceTree = "<group>"; };
+		00A8193526AA54C400AB6EB7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00A8193D26AA578800AB6EB7 /* NEMeetingUIMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEMeetingUIMgr.h; sourceTree = "<group>"; };
+		00A8193E26AA578800AB6EB7 /* NEMeetingUIMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEMeetingUIMgr.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		008CEB8A26A9686700ADBC00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008CEBA026A9686900ADBC00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008CEBAB26A9686900ADBC00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		008CEB8426A9686700ADBC00 = {
+			isa = PBXGroup;
+			children = (
+				008CEB8F26A9686700ADBC00 /* NESample */,
+				008CEBA626A9686900ADBC00 /* NESampleTests */,
+				008CEBB126A9686900ADBC00 /* NESampleUITests */,
+				008CEB8E26A9686700ADBC00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		008CEB8E26A9686700ADBC00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				008CEB8D26A9686700ADBC00 /* NESample.app */,
+				008CEBA326A9686900ADBC00 /* NESampleTests.xctest */,
+				008CEBAE26A9686900ADBC00 /* NESampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		008CEB8F26A9686700ADBC00 /* NESample */ = {
+			isa = PBXGroup;
+			children = (
+				00A8193126AA54C400AB6EB7 /* SupportingFiles */,
+				00A8191426AA532900AB6EB7 /* Control */,
+				00A8191626AA532900AB6EB7 /* Call */,
+				00A8191126AA532900AB6EB7 /* CommonUI */,
+				00A8191226AA532900AB6EB7 /* NEKit */,
+				00A8191526AA532900AB6EB7 /* Vendor */,
+			);
+			path = NESample;
+			sourceTree = "<group>";
+		};
+		008CEBA626A9686900ADBC00 /* NESampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				008CEBA726A9686900ADBC00 /* NESampleTests.m */,
+				008CEBA926A9686900ADBC00 /* Info.plist */,
+			);
+			path = NESampleTests;
+			sourceTree = "<group>";
+		};
+		008CEBB126A9686900ADBC00 /* NESampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				008CEBB226A9686900ADBC00 /* NESampleUITests.m */,
+				008CEBB426A9686900ADBC00 /* Info.plist */,
+			);
+			path = NESampleUITests;
+			sourceTree = "<group>";
+		};
+		00A8191126AA532900AB6EB7 /* CommonUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CommonUI;
+			sourceTree = SOURCE_ROOT;
+		};
+		00A8191226AA532900AB6EB7 /* NEKit */ = {
+			isa = PBXGroup;
+			children = (
+				00A6825A26AABE9000D660A8 /* NETextFieldCell.h */,
+				00A6825B26AABE9000D660A8 /* NETextFieldCell.m */,
+				00A6825D26AABEDC00D660A8 /* NETextField.h */,
+				00A6825E26AABEDC00D660A8 /* NETextField.m */,
+			);
+			path = NEKit;
+			sourceTree = SOURCE_ROOT;
+		};
+		00A8191426AA532900AB6EB7 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				00A8192226AA537D00AB6EB7 /* AppDelegate.h */,
+				00A8191B26AA537D00AB6EB7 /* AppDelegate.m */,
+				00A8192626AA537D00AB6EB7 /* NEUIMgrProtocol.h */,
+				00A8191E26AA537D00AB6EB7 /* NEUIMgr.h */,
+				00A8192426AA537D00AB6EB7 /* NEUIMgr.m */,
+				00A8191D26AA537D00AB6EB7 /* NEMainWindow.h */,
+				00A8192726AA537D00AB6EB7 /* NEMainWindow.m */,
+				00A8192526AA537D00AB6EB7 /* NEMainWindowController.h */,
+				00A8191926AA537D00AB6EB7 /* NEMainWindowController.m */,
+				00A8191A26AA537D00AB6EB7 /* NEMainWindowContentView.h */,
+				00A8191C26AA537D00AB6EB7 /* NEMainWindowContentView.m */,
+			);
+			path = Control;
+			sourceTree = SOURCE_ROOT;
+		};
+		00A8191526AA532900AB6EB7 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = SOURCE_ROOT;
+		};
+		00A8191626AA532900AB6EB7 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				00A8193C26AA566200AB6EB7 /* Meeting */,
+				00A8191726AA532900AB6EB7 /* VideoCall-1to1 */,
+				00A8191826AA532900AB6EB7 /* GroupCall */,
+			);
+			path = Call;
+			sourceTree = SOURCE_ROOT;
+		};
+		00A8191726AA532900AB6EB7 /* VideoCall-1to1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "VideoCall-1to1";
+			sourceTree = "<group>";
+		};
+		00A8191826AA532900AB6EB7 /* GroupCall */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GroupCall;
+			sourceTree = "<group>";
+		};
+		00A8193126AA54C400AB6EB7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				00A8193326AA54C400AB6EB7 /* main.m */,
+				00A8193226AA54C400AB6EB7 /* Assets.xcassets */,
+				00A8193426AA54C400AB6EB7 /* NESample.entitlements */,
+				00A8193526AA54C400AB6EB7 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = SOURCE_ROOT;
+		};
+		00A8193C26AA566200AB6EB7 /* Meeting */ = {
+			isa = PBXGroup;
+			children = (
+				00A8193D26AA578800AB6EB7 /* NEMeetingUIMgr.h */,
+				00A8193E26AA578800AB6EB7 /* NEMeetingUIMgr.m */,
+			);
+			path = Meeting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		008CEB8C26A9686700ADBC00 /* NESample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008CEBB726A9686900ADBC00 /* Build configuration list for PBXNativeTarget "NESample" */;
+			buildPhases = (
+				008CEB8926A9686700ADBC00 /* Sources */,
+				008CEB8A26A9686700ADBC00 /* Frameworks */,
+				008CEB8B26A9686700ADBC00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NESample;
+			productName = NESample;
+			productReference = 008CEB8D26A9686700ADBC00 /* NESample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		008CEBA226A9686900ADBC00 /* NESampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008CEBBA26A9686900ADBC00 /* Build configuration list for PBXNativeTarget "NESampleTests" */;
+			buildPhases = (
+				008CEB9F26A9686900ADBC00 /* Sources */,
+				008CEBA026A9686900ADBC00 /* Frameworks */,
+				008CEBA126A9686900ADBC00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				008CEBA526A9686900ADBC00 /* PBXTargetDependency */,
+			);
+			name = NESampleTests;
+			productName = NESampleTests;
+			productReference = 008CEBA326A9686900ADBC00 /* NESampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		008CEBAD26A9686900ADBC00 /* NESampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 008CEBBD26A9686900ADBC00 /* Build configuration list for PBXNativeTarget "NESampleUITests" */;
+			buildPhases = (
+				008CEBAA26A9686900ADBC00 /* Sources */,
+				008CEBAB26A9686900ADBC00 /* Frameworks */,
+				008CEBAC26A9686900ADBC00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				008CEBB026A9686900ADBC00 /* PBXTargetDependency */,
+			);
+			name = NESampleUITests;
+			productName = NESampleUITests;
+			productReference = 008CEBAE26A9686900ADBC00 /* NESampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		008CEB8526A9686700ADBC00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					008CEB8C26A9686700ADBC00 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					008CEBA226A9686900ADBC00 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 008CEB8C26A9686700ADBC00;
+					};
+					008CEBAD26A9686900ADBC00 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 008CEB8C26A9686700ADBC00;
+					};
+				};
+			};
+			buildConfigurationList = 008CEB8826A9686700ADBC00 /* Build configuration list for PBXProject "NESample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 008CEB8426A9686700ADBC00;
+			productRefGroup = 008CEB8E26A9686700ADBC00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				008CEB8C26A9686700ADBC00 /* NESample */,
+				008CEBA226A9686900ADBC00 /* NESampleTests */,
+				008CEBAD26A9686900ADBC00 /* NESampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		008CEB8B26A9686700ADBC00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A8193626AA54C400AB6EB7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008CEBA126A9686900ADBC00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008CEBAC26A9686900ADBC00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		008CEB8926A9686700ADBC00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00A6825C26AABE9000D660A8 /* NETextFieldCell.m in Sources */,
+				00A8192A26AA537D00AB6EB7 /* NEMainWindowContentView.m in Sources */,
+				00A8192D26AA537D00AB6EB7 /* NEUIMgr.m in Sources */,
+				00A8192926AA537D00AB6EB7 /* AppDelegate.m in Sources */,
+				00A8192826AA537D00AB6EB7 /* NEMainWindowController.m in Sources */,
+				00A8193726AA54C400AB6EB7 /* main.m in Sources */,
+				00A6825F26AABEDC00D660A8 /* NETextField.m in Sources */,
+				00A8193F26AA578800AB6EB7 /* NEMeetingUIMgr.m in Sources */,
+				00A8192E26AA537D00AB6EB7 /* NEMainWindow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008CEB9F26A9686900ADBC00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008CEBA826A9686900ADBC00 /* NESampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		008CEBAA26A9686900ADBC00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008CEBB326A9686900ADBC00 /* NESampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		008CEBA526A9686900ADBC00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 008CEB8C26A9686700ADBC00 /* NESample */;
+			targetProxy = 008CEBA426A9686900ADBC00 /* PBXContainerItemProxy */;
+		};
+		008CEBB026A9686900ADBC00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 008CEB8C26A9686700ADBC00 /* NESample */;
+			targetProxy = 008CEBAF26A9686900ADBC00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		008CEBB526A9686900ADBC00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		008CEBB626A9686900ADBC00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		008CEBB826A9686900ADBC00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SupportingFiles/NESample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GJ8NYK9W5X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianqi.NESample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		008CEBB926A9686900ADBC00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SupportingFiles/NESample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GJ8NYK9W5X;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianqi.NESample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		008CEBBB26A9686900ADBC00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GJ8NYK9W5X;
+				INFOPLIST_FILE = NESampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianqi.NESampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NESample.app/Contents/MacOS/NESample";
+			};
+			name = Debug;
+		};
+		008CEBBC26A9686900ADBC00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GJ8NYK9W5X;
+				INFOPLIST_FILE = NESampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianqi.NESampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NESample.app/Contents/MacOS/NESample";
+			};
+			name = Release;
+		};
+		008CEBBE26A9686900ADBC00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GJ8NYK9W5X;
+				INFOPLIST_FILE = NESampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianqi.NESampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NESample;
+			};
+			name = Debug;
+		};
+		008CEBBF26A9686900ADBC00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = GJ8NYK9W5X;
+				INFOPLIST_FILE = NESampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianqi.NESampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NESample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		008CEB8826A9686700ADBC00 /* Build configuration list for PBXProject "NESample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008CEBB526A9686900ADBC00 /* Debug */,
+				008CEBB626A9686900ADBC00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		008CEBB726A9686900ADBC00 /* Build configuration list for PBXNativeTarget "NESample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008CEBB826A9686900ADBC00 /* Debug */,
+				008CEBB926A9686900ADBC00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		008CEBBA26A9686900ADBC00 /* Build configuration list for PBXNativeTarget "NESampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008CEBBB26A9686900ADBC00 /* Debug */,
+				008CEBBC26A9686900ADBC00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		008CEBBD26A9686900ADBC00 /* Build configuration list for PBXNativeTarget "NESampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008CEBBE26A9686900ADBC00 /* Debug */,
+				008CEBBF26A9686900ADBC00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 008CEB8526A9686700ADBC00 /* Project object */;
+}
