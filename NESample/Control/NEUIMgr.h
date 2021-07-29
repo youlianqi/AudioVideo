@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (NEUIMgr *)sharedInstance;
 
 - (void)showMainWindowWithDelegate:(id)delegate;
+- (void)showButtonWindow;
 
 @end
 

@@ -11,6 +11,9 @@
 		008CEBB326A9686900ADBC00 /* NESampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 008CEBB226A9686900ADBC00 /* NESampleUITests.m */; };
 		00A6825C26AABE9000D660A8 /* NETextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A6825B26AABE9000D660A8 /* NETextFieldCell.m */; };
 		00A6825F26AABEDC00D660A8 /* NETextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A6825E26AABEDC00D660A8 /* NETextField.m */; };
+		00A6826B26AB2DF600D660A8 /* NEButtonWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A6826726AB2DF600D660A8 /* NEButtonWindow.m */; };
+		00A6826C26AB2DF600D660A8 /* NEButtonWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A6826A26AB2DF600D660A8 /* NEButtonWindowController.m */; };
+		00A6826F26AB2E1C00D660A8 /* NEButtonWindowContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A6826E26AB2E1C00D660A8 /* NEButtonWindowContentView.m */; };
 		00A8192826AA537D00AB6EB7 /* NEMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A8191926AA537D00AB6EB7 /* NEMainWindowController.m */; };
 		00A8192926AA537D00AB6EB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A8191B26AA537D00AB6EB7 /* AppDelegate.m */; };
 		00A8192A26AA537D00AB6EB7 /* NEMainWindowContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A8191C26AA537D00AB6EB7 /* NEMainWindowContentView.m */; };
@@ -50,6 +53,12 @@
 		00A6825B26AABE9000D660A8 /* NETextFieldCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETextFieldCell.m; sourceTree = "<group>"; };
 		00A6825D26AABEDC00D660A8 /* NETextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NETextField.h; sourceTree = "<group>"; };
 		00A6825E26AABEDC00D660A8 /* NETextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NETextField.m; sourceTree = "<group>"; };
+		00A6826726AB2DF600D660A8 /* NEButtonWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEButtonWindow.m; sourceTree = "<group>"; };
+		00A6826826AB2DF600D660A8 /* NEButtonWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEButtonWindowController.h; sourceTree = "<group>"; };
+		00A6826926AB2DF600D660A8 /* NEButtonWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEButtonWindow.h; sourceTree = "<group>"; };
+		00A6826A26AB2DF600D660A8 /* NEButtonWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEButtonWindowController.m; sourceTree = "<group>"; };
+		00A6826D26AB2E1C00D660A8 /* NEButtonWindowContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NEButtonWindowContentView.h; sourceTree = "<group>"; };
+		00A6826E26AB2E1C00D660A8 /* NEButtonWindowContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NEButtonWindowContentView.m; sourceTree = "<group>"; };
 		00A8191926AA537D00AB6EB7 /* NEMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NEMainWindowController.m; sourceTree = "<group>"; };
 		00A8191A26AA537D00AB6EB7 /* NEMainWindowContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NEMainWindowContentView.h; sourceTree = "<group>"; };
 		00A8191B26AA537D00AB6EB7 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -145,9 +154,23 @@
 			path = NESampleUITests;
 			sourceTree = "<group>";
 		};
+		00A6826626AB2DF600D660A8 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				00A6826926AB2DF600D660A8 /* NEButtonWindow.h */,
+				00A6826726AB2DF600D660A8 /* NEButtonWindow.m */,
+				00A6826826AB2DF600D660A8 /* NEButtonWindowController.h */,
+				00A6826A26AB2DF600D660A8 /* NEButtonWindowController.m */,
+				00A6826D26AB2E1C00D660A8 /* NEButtonWindowContentView.h */,
+				00A6826E26AB2E1C00D660A8 /* NEButtonWindowContentView.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		00A8191126AA532900AB6EB7 /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
+				00A6826626AB2DF600D660A8 /* Button */,
 			);
 			path = CommonUI;
 			sourceTree = SOURCE_ROOT;
@@ -359,8 +382,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A6826B26AB2DF600D660A8 /* NEButtonWindow.m in Sources */,
 				00A6825C26AABE9000D660A8 /* NETextFieldCell.m in Sources */,
 				00A8192A26AA537D00AB6EB7 /* NEMainWindowContentView.m in Sources */,
+				00A6826F26AB2E1C00D660A8 /* NEButtonWindowContentView.m in Sources */,
+				00A6826C26AB2DF600D660A8 /* NEButtonWindowController.m in Sources */,
 				00A8192D26AA537D00AB6EB7 /* NEUIMgr.m in Sources */,
 				00A8192926AA537D00AB6EB7 /* AppDelegate.m in Sources */,
 				00A8192826AA537D00AB6EB7 /* NEMainWindowController.m in Sources */,

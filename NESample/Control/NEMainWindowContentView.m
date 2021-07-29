@@ -8,11 +8,13 @@
 #import "NEMainWindowContentView.h"
 #import "NETextField.h"
 #import "NETextFieldCell.h"
+#import "NEUIMgr.h"
 
 @interface TreeNodeModel : NSObject
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSMutableArray *childNodes;
+@property (nonatomic, strong) NSString *actionName;
 
 @end
 
@@ -77,7 +79,6 @@ static NSString * CustomTableCellID = @"CustomTableCellID";
     self.titleLabel.bordered = NO;
     [self.titleLabel setAutoresizingMask:NSViewWidthSizable | NSViewHeightSizable];
     self.wantsLayer = YES;
-    self.layer.backgroundColor = [NSColor whiteColor].CGColor;
 }
 
 - (void)layout
@@ -86,6 +87,7 @@ static NSString * CustomTableCellID = @"CustomTableCellID";
     
     self.titleLabel.frame = CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height);
 }
+
 
 @end
 
@@ -123,13 +125,12 @@ static NSString * CustomTableCellID = @"CustomTableCellID";
     _outlineView.dataSource = self;
     _outlineView.delegate = self;
     _outlineView.allowsColumnResizing = YES;
-    _outlineView.style = NSTableViewStyleAutomatic;
     _outlineView.headerView = nil;
     _outlineView.allowsMultipleSelection = NO;
     _outlineView.allowsColumnSelection = NO;
     _outlineView.allowsEmptySelection = YES;
     _outlineView.allowsTypeSelect = YES;
-    _outlineView.selectionHighlightStyle = NSTableViewSelectionHighlightStyleNone;
+    _outlineView.selectionHighlightStyle = NSTableViewSelectionHighlightStyleRegular;
     _outlineView.columnAutoresizingStyle = NSTableViewFirstColumnOnlyAutoresizingStyle;
     [_outlineView addTableColumn:tableColumn];
 
@@ -172,12 +173,14 @@ static NSString * CustomTableCellID = @"CustomTableCellID";
         {
             TreeNodeModel *level2Node = [[TreeNodeModel alloc] init];
             level2Node.name = @"Button";
+            level2Node.actionName = @"onButton";
             [level1Node.childNodes addObject:level2Node];
         }
         
         {
             TreeNodeModel *level2Node = [[TreeNodeModel alloc] init];
             level2Node.name = @"Label";
+            level2Node.actionName = @"onLabel";
             [level1Node.childNodes addObject:level2Node];
         }
         
@@ -191,18 +194,21 @@ static NSString * CustomTableCellID = @"CustomTableCellID";
         {
             TreeNodeModel *level2Node = [[TreeNodeModel alloc] init];
             level2Node.name = @"Meeting";
+            level2Node.actionName = @"onMeeting";
             [level1Node.childNodes addObject:level2Node];
         }
         
         {
             TreeNodeModel *level2Node = [[TreeNodeModel alloc] init];
             level2Node.name = @"Group Call";
+            level2Node.actionName = @"onGroupCall";
             [level1Node.childNodes addObject:level2Node];
         }
         
         {
             TreeNodeModel *level2Node = [[TreeNodeModel alloc] init];
             level2Node.name = @"Video Cal-1to1";
+            level2Node.actionName = @"onVideoCall";
             [level1Node.childNodes addObject:level2Node];
         }
         
@@ -281,15 +287,51 @@ static NSString * CustomTableCellID = @"CustomTableCellID";
     return cell;
 }
 
+
 - (void)outlineViewSelectionDidChange:(NSNotification *)notification {
     NSOutlineView *treeView = notification.object;
     NSInteger row = [treeView selectedRow];
     TreeNodeModel *model = (TreeNodeModel *)[treeView itemAtRow:row];
-    //NSLog(@"name = %@", model.name);
+    NSLog(@"name = %@", model.name);
+    if (model.actionName) {
+        SEL selector = NSSelectorFromString(model.actionName);
+        IMP imp = [self methodForSelector:selector];
+        void (*func)(id, SEL) = (void *)imp;
+        func(self, selector);
+    }
+    
+    [treeView deselectRow:row];
 }
 
 - (CGFloat)outlineView:(NSOutlineView *)outlineView heightOfRowByItem:(id)item {
     return 30.0f;
+}
+
+- (void)onButton
+{
+    NSLog(@"%s",__FUNCTION__);
+    
+    [[NEUIMgr sharedInstance] showButtonWindow];
+}
+
+- (void)onLabel
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)onMeeting
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)onGroupCall
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+- (void)onVideoCall
+{
+    NSLog(@"%s",__FUNCTION__);
 }
 
 @end

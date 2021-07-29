@@ -20,7 +20,7 @@
 - (instancetype)init
 {
     NSWindowStyleMask style = NSWindowStyleMaskBorderless | NSWindowStyleMaskTitled | NSWindowStyleMaskClosable | NSWindowStyleMaskMiniaturizable | NSWindowStyleMaskResizable;
-    NSRect contentRect = NSMakeRect(0, 0, 700, 440);
+    NSRect contentRect = NSMakeRect(0, 0, 500, 440);
     
     self = [super initWithContentRect:contentRect styleMask:style backing:NSBackingStoreBuffered defer:NO];
     if (self) {

@@ -23,6 +23,7 @@
 -(void) customizedTextField{
     self.cell = [[NETextFieldCell alloc] init];
     // 此处可以加入各种style设置
+    
 }
  
 - (void)drawRect:(NSRect)dirtyRect {

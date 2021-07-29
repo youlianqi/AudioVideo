@@ -9,6 +9,20 @@
 
 @implementation NETextFieldCell
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.font = [NSFont systemFontOfSize:13.0f];
+        self.textColor = [NSColor controlTextColor];
+        self.backgroundColor = [NSColor clearColor];
+        self.bezeled = NO;
+        self.drawsBackground = NO;
+        self.bordered = NO;
+    }
+    return self;
+}
+
 - (NSRect)adjustedFrameToVerticallyCenterText:(NSRect)frame {
    // super would normally draw text at the top of the cell
    CGFloat fontSize = self.font.boundingRectForFont.size.height;

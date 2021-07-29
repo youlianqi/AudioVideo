@@ -9,15 +9,24 @@
 #import "NEMeetingUIMgr.h"
 #import "NEMainWindowController.h"
 #import "NEMainWindow.h"
+#import "NEButtonWindow.h"
+#import "NEButtonWindowController.h"
 
-const CGFloat kMainWindowMinWidth             = 700;
+const CGFloat kMainWindowMinWidth             = 500;
 const CGFloat kMainWindowMinHeight             = 440;    // this is the minimum height
 
 @interface NEUIMgr()
 
 @property (nonatomic, strong) NEMeetingUIMgr *meetingUIMgr;
+
 @property (nonatomic, strong) NEMainWindowController *mainWindowController;
 @property (nonatomic, strong) NEMainWindow *mainWindow;
+
+@property (nonatomic, strong) NEButtonWindowController *buttonWindowController;
+@property (nonatomic, strong) NEButtonWindow *buttonWindow;
+
+@property (nonatomic, assign) NSModalSession mainWindowSession;
+@property (nonatomic, assign) NSModalSession buttonWindowSession;
 
 @end
 
@@ -34,14 +43,15 @@ const CGFloat kMainWindowMinHeight             = 440;    // this is the minimum 
 
 - (void)dealloc
 {
-    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        
+        NSNotificationCenter *defaultCenter = [NSNotificationCenter defaultCenter];
+        [defaultCenter addObserver:self selector:@selector(onNotifyWindowWillClose:) name:NSWindowWillCloseNotification object:nil];
     }
     return self;
 }
@@ -50,9 +60,17 @@ const CGFloat kMainWindowMinHeight             = 440;    // this is the minimum 
 
 - (void)showMainWindowWithDelegate:(id)delegate
 {
-    [self createMainWindow];
     [self showMainWindow];
-    _mainWindow.delegate = delegate;
+    self.mainWindow.delegate = delegate;
+}
+
+- (void)showButtonWindow
+{
+    [self.mainWindow close];
+    
+    [self.buttonWindow center];
+    [self.buttonWindow makeKeyAndOrderFront:self];
+    self.buttonWindowSession = [NSApp beginModalSessionForWindow:self.buttonWindow];
 }
 
 #pragma mark -
@@ -67,23 +85,53 @@ const CGFloat kMainWindowMinHeight             = 440;    // this is the minimum 
 
 #pragma mark - creates
 
-- (void)createMainWindow
+- (NEMainWindowController *)mainWindowController
 {
-    _mainWindowController = [[NEMainWindowController alloc] init];
-    _mainWindow = (NEMainWindow *)_mainWindowController.window;
+    if (!_mainWindowController) {
+        _mainWindowController = [[NEMainWindowController alloc] init];
+    }
+    
+    return _mainWindowController;
+}
+
+- (NEMainWindow *)mainWindow
+{
+    if (!_mainWindow) {
+        _mainWindow = (NEMainWindow *)self.mainWindowController.window;
+    }
+    
+    return _mainWindow;
+}
+
+- (NEButtonWindowController *)buttonWindowController
+{
+    if (!_buttonWindowController) {
+        _buttonWindowController = [[NEButtonWindowController alloc] init];
+    }
+    
+    return _buttonWindowController;
+}
+
+- (NEButtonWindow *)buttonWindow
+{
+    if (!_buttonWindow) {
+        _buttonWindow = (NEButtonWindow *)self.buttonWindowController.window;
+    }
+    
+    return _buttonWindow;
 }
 
 - (void)showMainWindow
 {
     [self resizeMainWindow];
-    [_mainWindow center];
-    [_mainWindow makeKeyAndOrderFront:self];
-    [NSApp beginModalSessionForWindow:self.mainWindow];
+    [self.mainWindow center];
+    [self.mainWindow makeKeyAndOrderFront:self];
+    self.mainWindowSession = [NSApp beginModalSessionForWindow:self.mainWindow];
 }
 
 - (void)resizeMainWindow
 {
-    NSRect frameRect = [_mainWindow frame];
+    NSRect frameRect = [self.mainWindow frame];
     NSRect adjustRect = frameRect;
     if (adjustRect.size.width < kMainWindowMinWidth)
         adjustRect.size.width = kMainWindowMinWidth;
@@ -91,7 +139,15 @@ const CGFloat kMainWindowMinHeight             = 440;    // this is the minimum 
     if (adjustRect.size.height < kMainWindowMinHeight)
         adjustRect.size.height = kMainWindowMinHeight;
     
-    [_mainWindow setFrame:adjustRect display:YES];
+    [self.mainWindow setFrame:adjustRect display:YES];
+}
+
+- (void)onNotifyWindowWillClose:(NSNotification *)notification
+{
+    NSWindow *window = (NSWindow *)notification.object;
+    if (_buttonWindow && _buttonWindow == window) {
+        [self showMainWindow];
+    }
 }
 
 
